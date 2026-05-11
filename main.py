@@ -72,11 +72,11 @@ if __name__ == "__main__":
 
     micro_pause: задержка между сообщениями (если совпали по времени)
     """
-    
+    with open('config.txt', 'r', encoding='utf-8') as file:
+        username = file.read().strip()
+
     messages = [
-        {"text": "/инфо баланс кто:@hzzrd7", "interval": 3.5, "jitter": 1},
-        # {"text": "/кубик ", "interval": 5, "jitter": 1},
-        # {"text": "/снежок кого:@kaponikis", "interval": 70, "jitter": 3},
+        {"text": f"/инфо баланс кто:@{username}", "interval": 3.5, "jitter": 1},
     ]
 
     message_scheduler(messages, micro_pause=0.7)
