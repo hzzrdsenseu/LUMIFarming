@@ -74,7 +74,7 @@ if __name__ == "__main__":
     """
     
     messages = [
-        {"text": "/инфо баланс кто:@hzzrdbot", "interval": 3.5, "jitter": 1},
+        {"text": "/инфо баланс кто:@hzzrd7", "interval": 3.5, "jitter": 1},
         # {"text": "/кубик ", "interval": 5, "jitter": 1},
         # {"text": "/снежок кого:@kaponikis", "interval": 70, "jitter": 3},
     ]
